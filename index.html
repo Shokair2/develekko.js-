@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+    <title>develkko</title>
+</head>
+<body>
+
+    <button id="upBtn" type="button" class="btn shadow-none text-white"><i class="fa-solid fa-arrow-up "></i></button>
+
+    <div class="sidebar d-flex ">
+        <div class="sectionscontent py-3  px-5  w-100 text-white flex-column d-flex justify-content-between">
+      <div class="mt-0 me-5 text-start ">
+        <ul>
+            <li><a attr="nowPlaying"><h3 class="fw-normal fs-4 py-3"  data-category="shooter">Now Playing</h3></a></li>
+            <li><a attr="popular"><h3 class="fw-normal fs-4 py-3"  data-category="shooter">Populer</h3></a></li>
+            <li><a attr="topRated"> <h3 class="fw-normal fs-4 py-3"  data-category="shooter">Top Rated</h3></a></li>
+            <li><a attr="topRated"> <h3 class="fw-normal fs-4 py-3"  data-category="shooter">Top Rated</h3></a></li>
+            <li> <a attr="trending"> <h3 class="fw-normal fs-4 py-3"  data-category="shooter">Trending</h3></a></li>
+            <li> <a attr="upcoming">    <h3 class="fw-normal fs-4 py-3"  data-category="shooter">Upcoming</h3></a></li>
+            <li>  <a href="#contact">    <h3 class="fw-normal fs-4 py-3"  data-category="shooter">Contact Us</h3></a></a></li>
+        </ul>
+        
+        
+        
+       
+       
+       
+        </div>
+          <div class="copyRight">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter px-3"></i>
+            <i class="fa-solid fa-globe "></i>
+            <p class="fw-lighter">Copyright © 2022 All Rights Reserved. <br> created by. <span class="text-danger fw-bolder fs-4">Mohamed Shokair</span></p>
+          </div>
+        </div>
+    <div id="sidecontroler" class="sidecontrol d-flex justify-content-between">
+        
+        <h1 class="openico text-white text-start fw-normal p-3 fs-2 d-flex justify-content-start align-items-center "> <i class=" fa-solid fa-bars px-2"></i> </h1>
+        <h1 class="closeico text-white d-none text-start fw-normal p-3 fs-2 d-flex justify-content-start align-items-center"><i class="fa-solid fa-xmark px-2"></i> </h1>
+
+        
+    </div>
+
+      </div>
+
+      
+
+      <section id="hero" class="container py-5">
+        <input id="search" type="search" placeholder="Search" class="form-control w-50 mx-auto bg-transparent rounded-pill text-white shadow-none border-white px-3">
+            <div class="row g-4 mt-3 text-white"></div>
+    </section>
+
+      
+     
+      
+    <section id="contact" class="container text-white py-5">
+        <h2>Contact US</h2>
+        <form>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <input type="text" oninput="validations()" required id="name" maxlength="37" class="form-control mt-4" placeholder="Enter Your Name">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" oninput="validations()" required id="email"  class="form-control mt-4" placeholder="Enter Your Email">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" oninput="validations()" required id="phone" class="form-control mt-4" placeholder="Enter Your Phone">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" oninput="validations()" required id="age"  class="form-control mt-4" placeholder="Enter Your Age">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-6 position-relative">
+                    <input type="password" oninput="validations()" required id="password" class="form-control mt-4" placeholder="Enter Your Password">
+                    <span Class="error" class="animate__animated"></span>
+                    <span class="showPass"><i data-show="show" class="fa-solid fa-eye-slash"></i></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" oninput="validations()" required id="repassword" class="form-control mt-4" placeholder="ReEnter Password">
+                    <span Class="error" class="animate__animated"></span>
+                </div>
+                <div class="col-md-12  mt-4">
+                    <button type="submit" class="form-btn rounded-2 mb-3 animate__animated">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+     
+    
+    
+    
+    
+   
+    <div class="loading">
+        <span class="loader"></span>
+    </div>
+    
+    
+    
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="develekko.js/jquery-3.7.1.min.js"></script>
+   
+    <script src="develekko.js/main.js"></script>
+</body>
+</html>
